@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import CustomButton from '../custom-button/custom-button.component';
+import styled from "styled-components";
+import CustomButton from "../custom-button/custom-button.component";
 
 export const CollectionItemContainer = styled.div`
   width: 22vw;
@@ -33,7 +33,8 @@ export const BackgroundImage = styled.div`
   width: 100%;
   height: 95%;
   background-size: cover;
-  background-position: center;
+  background-position: ${({ imageUrl }) =>
+    imageUrl.includes("1564609116497") ? `bottom` : `center`};
   margin-bottom: 5px;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 `;
